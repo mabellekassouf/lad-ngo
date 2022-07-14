@@ -1,0 +1,146 @@
+{
+  "language": "English",
+  "@language": {
+    "description": "The current Language"
+  },
+  "hello": "Hello",
+  "@hello": {
+    "description": "Greeting user"
+  },
+  "home": "Home",
+  "@home": {
+    "description": "Home page"
+  },
+  "contactus": "Contact Us",
+  "@contactus": {
+    "description": "Contact Us"
+  },
+  "aboutus": "About Us",
+  "@aboutus": {
+    "description": "About Us"
+  },
+  "connect": "Connect",
+  "@connect": {
+    "description": "Connect"
+  },
+  "activitiesandprograms": "Activities & Programs",
+  "@activitiesandprograms": {
+    "description": "Activities & Programs"
+  },
+  "mediacenter": "Media Center",
+  "@mediacenter": {
+    "description": "Media Center"
+  },
+  "ourgoals": "Our Goals",
+  "@ourgoals": {
+    "description": "Our Goals"
+  },
+  "mission": "Our Mission",
+  "@mission": {
+    "description": "Mission"
+  },
+  "vision": "Our Vision",
+  "@vision": {
+    "description": "Vision"
+  },
+  "welcomemessage": "Welcome to the Lebanese Association for Development",
+  "@welcomemessage": {
+    "description": "welcome message"
+  },
+  "whoweare": "Who We Are",
+  "@whoweare": {
+    "description": "who we are"
+  },
+  "ourservices": "Our Services",
+  "@ourservices": {
+    "description": "services"
+  },
+  "trainingandbuildingcapacity": "Training and Building Capacity",
+  "@trainingandbuildingcapacity": {
+    "description": "training and building capacity"
+  },
+  "academicsupport": "Academic Support",
+  "@academicsupport": {
+    "description": "academic support"
+  },
+  "awareness": "Awareness",
+  "@awareness": {
+    "description": "awareness"
+  },
+  "advocacy": "Advocacy",
+  "@advocacy": {
+    "description": "advocacy"
+  },
+  "psychosocialsupport": "Psychosocial Support",
+  "@psychosocialsupport": {
+    "description": "psychosocial support"
+  },
+  "moreservices": "More Services",
+  "@moreservices": {
+    "description": "more services"
+  },
+  "more": "More",
+  "@more": {
+    "description": "more"
+  },
+  "getinvolved": "Get Involved",
+  "@getinvolved": {
+    "description": "get involved"
+  },
+  "makethecommitment": "Make The Commitment",
+  "@makethecommitment": {
+    "description": "make the commitment"
+  },
+  "donate": "Donate",
+  "@donate": {
+    "description": "donate"
+  },
+  "ourvisiontext": "Youth development is the hope we believe in to meet the challenges of the future and build a better society.",
+  "@ourvisiontext": {
+    "description": "our vision text"
+  },
+  "ourmissiontext": "Providing programs, trainings and initiatives that seek to develop and support the youth category in all aspects and within various fields, and focus on working with and for young people towards sustainable development.",
+  "@ourmissiontext": {
+    "description": "our mission text"
+  },
+  "ourgoalstext": "1. Empowering young people through training and programs that refine their skills and abilities academically, practically, culturally, socially and economically.\n2. Providing young people with the necessary job skills to get a job in the labor market.\n3. Involve young people in voluntary work that contributes to building peace in their communities.\n4. Enhancing the mental health of young people by providing appropriate psychosocial support.",
+  "@ourgoalstext": {
+    "description": "our goals text"
+  },
+  "whowearetext_home":  "The Lebanese Association for Development is an association under registration in the Lebanese Ministry of the Interior, and it is supervised by Dr. Faten Skafi, a researcher in the field of psychology and education and a licensed psychological consultant from the Lebanese Ministry of Public Health. The idea of establishing the Lebanese Association for Development came from a group of interested persons and those with expertise and experience in the field of education, training and psychological support with the aim of developing young people for them to become productive individuals by providing training and workshops that contribute to develop their abilities and involving them in community work and encouraging volunteer work.",
+  "@whowearetext_home": {
+    "description": "Who we are text for home"
+  },
+  "whowearetextpartone":  "The Lebanese Association for Development is an association under registration in the Lebanese Ministry of the Interior, and it is supervised by Dr. Faten Skafi, a researcher in the field of psychology and education and a licensed psychological consultant from the Lebanese Ministry of Public Health. \nThe idea of establishing the Lebanese Association for Development came from a group of interested persons and those with expertise and experience in the field of education, training and psychological support with the aim of developing young people for them to become productive individuals by providing training and workshops that contribute to develop their abilities and involving them in community work and encouraging volunteer work. Besides, empowering young people, especially in the labor market, in order to enhance their role in building their future and society, as well as by focusing on enhancing their mental health by providing group and individual psychosocial support services.\nThe aim was to focus on young people, because they are often ignored and excluded from development projects, awareness-raising and services of a humanitarian nature, especially participation in human rights and voluntary initiatives in their communities, while supporting and activating this category in particular should constitute an essential step towards developing productive, coexisting and prosperous societies.",
+  "@whowearetextpartone": {
+    "description": "Who we are text part 1"
+  },
+  "whowearetextparttwo":  "The association works in the field of:\n•\tEmpowering young men and women and developing their abilities and skills\n•\tEducating young men and women in various fields, especially with regard to peace building.\n•\tEmpowering young men and women with the skills of the labor market.\n•\tQualifying youth workers and building their capacities.\n•\tProviding psychological/social support services to young men/women.\n•\tSpreading awareness among the families and society about the importance of the youth stage.",
+  "@whowearetextparttwo": {
+    "description": "Who we are text part 1"
+  },
+  "footertext": "The Lebanese Association for Development is an association under registration in the Lebanese Ministry of the Interior, and it is supervised by Dr. Faten Skafi, a researcher in the field of psychology and education and a licensed psychological consultant from the Lebanese Ministry of Public Health.",
+  "@footertext": {
+    "description": "footer text"
+  },
+  "contractform": "Contract Form",
+  "@contractform": {
+    "description": "contract form"
+  },
+  "name": "Name",
+  "@name": {
+    "description": "contract form"
+  },
+  "email": "E-mail",
+  "@email": {
+    "description": "contract form"
+  },
+  "message": "Message",
+  "@message": {
+    "description": "contract form"
+  },
+  "submit": "Submit",
+  "@submit": {
+    "description": "contract form"
+  }
+}
