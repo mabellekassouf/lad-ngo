@@ -1,28 +1,145 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../../helpers/responsive_helper.dart';
 import '../widgets/footer.dart';
 import '../widgets/navigation_bar.dart';
 class AboutUsScreen extends StatefulWidget {
-  const AboutUsScreen({Key? key}) : super(key: key);
+  final String scrollLocation;
+  const AboutUsScreen({
+    Key? key,
+    required this.scrollLocation,
+  }) : super(key: key);
 
   @override
   State<AboutUsScreen> createState() => _AboutUsScreenState();
 }
 
 class _AboutUsScreenState extends State<AboutUsScreen> {
+final ScrollController _scrollController = ScrollController();
 
+scrollToPlaceWeb(value) {
+  switch(value){
+    case "Main":{
+      Timer(
+        Duration(seconds: 0), () => _scrollController.animateTo(
+          0.0,
+          curve: Curves.easeOut,
+          duration: const Duration(milliseconds: 300)),
+      );
+    }
+    break;
+    case "Mission":{
+      Timer(
+        Duration(seconds: 0), () => _scrollController.animateTo(
+          1100,
+          curve: Curves.easeOut,
+          duration: const Duration(milliseconds: 300)),
+      );
+    }
+    break;
+    case "Vision":{
+      Timer(
+        Duration(seconds: 0), () => _scrollController.animateTo(
+          1150,
+          curve: Curves.easeOut,
+          duration: const Duration(milliseconds: 300)),
+      );
+    }
+    break;
+    case "Goals":{
+      Timer(
+        Duration(seconds: 0), () => _scrollController.animateTo(
+          900,
+          curve: Curves.easeOut,
+          duration: const Duration(milliseconds: 300)),
+      );
+    }
+    break;
+    case "WhoWeAre":{
+      Timer(
+        Duration(seconds: 0), () => _scrollController.animateTo(
+          450,
+          curve: Curves.easeOut,
+          duration: const Duration(milliseconds: 300)),
+      );
+    }
+    break;
+  }
+}
+scrollToPlaceMob(value) {
+  switch(value){
+    case "Main":{
+      Timer(
+        Duration(seconds: 0), () => _scrollController.animateTo(
+          0.0,
+          curve: Curves.easeOut,
+          duration: const Duration(milliseconds: 300)),
+      );
+    }
+    break;
+    case "Mission":{
+      Timer(
+        Duration(seconds: 0), () => _scrollController.animateTo(
+          1900,
+          curve: Curves.easeOut,
+          duration: const Duration(milliseconds: 300)),
+      );
+    }
+    break;
+    case "Vision":{
+      Timer(
+        Duration(seconds: 0), () => _scrollController.animateTo(
+          2000,
+          curve: Curves.easeOut,
+          duration: const Duration(milliseconds: 300)),
+      );
+    }
+    break;
+    case "Goals":{
+      Timer(
+        Duration(seconds: 0), () => _scrollController.animateTo(
+          1800,
+          curve: Curves.easeOut,
+          duration: const Duration(milliseconds: 300)),
+      );
+    }
+    break;
+    case "WhoWeAre":{
+      Timer(
+        Duration(seconds: 0), () => _scrollController.animateTo(
+          550,
+          curve: Curves.easeOut,
+          duration: const Duration(milliseconds: 300)),
+      );
+    }
+    break;
+  }
+}
+
+@override
+void initState() {
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
+    if(MediaQuery.of(context).size.width<768){
+      scrollToPlaceMob(widget.scrollLocation);
+    }
+    else{
+      scrollToPlaceWeb(widget.scrollLocation);
+    }
     return Scaffold(
       body: SafeArea(
         child: ResponsiveHelper(
           web: Stack(
             children: [
               SingleChildScrollView(
+                controller: _scrollController,
                 child: Column(
                   children: [
                     Stack(
@@ -42,7 +159,7 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
                               ),
                             ),
                             Container(
-                              height: height * 0.8,
+                              height: height ,
                               width: width,
                               color: Colors.white,
                               padding: EdgeInsets.symmetric(horizontal: width * 0.1,vertical: height*0.02),
@@ -50,9 +167,10 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   Container(
-                                    width:width*0.4,
+                                    width:width*0.5,
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
                                         Text(
                                           AppLocalizations.of(context)!.whoweare,
@@ -74,7 +192,7 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
                                     ),
                                   ),
                                   Container(
-                                    width:width*0.4,
+                                    width:width*0.3,
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       mainAxisAlignment: MainAxisAlignment.end,
@@ -87,15 +205,16 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
                               ),
                             ),
                             Container(
-                              height: height * 0.7,
+                              height: height * 0.9,
                               width: width,
                               padding: EdgeInsets.symmetric(horizontal: width * 0.1,vertical: height*0.02),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   Container(
-                                    width:width*0.4,
+                                    width:width*0.5,
                                     child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.center,
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
                                         Text(
@@ -131,7 +250,7 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
                                     ),
                                   ),
                                   Container(
-                                    width:width*0.4,
+                                    width:width*0.3,
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       mainAxisAlignment: MainAxisAlignment.center,
@@ -158,6 +277,7 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
           mobile: Stack(
             children: [
               SingleChildScrollView(
+                controller: _scrollController,
                 child: Column(
                   children: [
                     Stack(

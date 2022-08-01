@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ladorg/helpers/responsive_helper.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:ladorg/screens/about%20us/about_us.dart';
+import 'package:ladorg/screens/contact%20us/contactuspage.dart';
+import 'package:ladorg/screens/donate/donate.dart';
 import '../../helpers/constants.dart';
 
 class FooterWidget extends StatelessWidget {
@@ -79,7 +82,9 @@ class FooterWidget extends StatelessWidget {
                       style: TextButton.styleFrom(
                           padding: EdgeInsets.zero,
                           alignment: Alignment.centerLeft),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>DonateScreen()));
+                      },
                     ),
                   ],
                 ),
@@ -99,7 +104,9 @@ class FooterWidget extends StatelessWidget {
                           color: Colors.white,),
                       ),
                       style: TextButton.styleFrom(padding: EdgeInsets.zero),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>AboutUsScreen(scrollLocation: "Mission",)));
+                      },
                     ),
                     TextButton(
                       child: Text(
@@ -109,7 +116,9 @@ class FooterWidget extends StatelessWidget {
                           color: Colors.white,),
                       ),
                       style: TextButton.styleFrom(padding: EdgeInsets.zero),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>ContactUsScreen()));
+                      },
                     ),
                     Row(
                       children: [
@@ -168,7 +177,7 @@ class FooterWidget extends StatelessWidget {
       ),
       web: Container(
         width: width,
-        height: height * 0.5,
+        height: height * 0.55,
         padding: EdgeInsets.symmetric(
             horizontal: width * 0.02, vertical: height * 0.03),
         color: Color(0xff118AB2),
@@ -232,12 +241,18 @@ class FooterWidget extends StatelessWidget {
                     TextButton(
                       child: Text(
                         AppLocalizations.of(context)!.donate,
-                        style: TextStyle(fontWeight: FontWeight.bold,
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
                           color: Colors.white,
                         ),
                       ),
-                      style: TextButton.styleFrom(padding: EdgeInsets.zero),
-                      onPressed: () {},
+                      style: TextButton.styleFrom(
+                        alignment: Alignment.centerLeft,
+                        padding: EdgeInsets.zero,
+                      ),
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>DonateScreen()));
+                      },
                     ),
                   ],
                 ),
@@ -257,7 +272,9 @@ class FooterWidget extends StatelessWidget {
                         ),
                       ),
                       style: TextButton.styleFrom(padding: EdgeInsets.zero),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>AboutUsScreen(scrollLocation: "Mission",)));
+                      },
                     ),
                     TextButton(
                       child: Text(
@@ -267,7 +284,9 @@ class FooterWidget extends StatelessWidget {
                         ),
                       ),
                       style: TextButton.styleFrom(padding: EdgeInsets.zero),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>ContactUsScreen()));
+                      },
                     ),
                     Row(
                       children: [

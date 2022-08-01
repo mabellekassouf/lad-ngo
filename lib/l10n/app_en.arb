@@ -91,9 +91,9 @@
   "@makethecommitment": {
     "description": "make the commitment"
   },
-  "donate": "Donate",
+  "donate":"Donate",
   "@donate": {
-    "description": "donate"
+    "description":"donate"
   },
   "ourvisiontext": "Youth development is the hope we believe in to meet the challenges of the future and build a better society.",
   "@ourvisiontext": {

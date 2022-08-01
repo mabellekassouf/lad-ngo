@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ladorg/helpers/responsive_helper.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:ladorg/screens/services/services.dart';
 import 'package:provider/provider.dart';
 
 import '../../../models/servicesItem.dart';
@@ -161,7 +162,9 @@ class _HomeServicesWidgetState extends State<HomeServicesWidget> {
               width: width * 0.2,
               height: 50,
               child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>ServicesScreen()));
+                  },
                   child: Text(
                     AppLocalizations.of(context)!.moreservices,
                     style: TextStyle(
@@ -291,9 +294,11 @@ class _HomeServicesWidgetState extends State<HomeServicesWidget> {
               width: width * 0.4,
               height: 50,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ServicesScreen()));
+                },
                 child: Text(
-                  "More Services",
+                  AppLocalizations.of(context)!.moreservices,
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,

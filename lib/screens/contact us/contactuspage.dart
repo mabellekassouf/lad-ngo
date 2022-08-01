@@ -96,7 +96,7 @@ class _ContactUsScreenState extends State<ContactUsScreen> {
                   children: [
                     Container(
                       height: height*0.8,
-                      color: Color(0xffFFD166),
+                      // color: Color(0xffFFD166),
                       child: Center(
                         child: Text(AppLocalizations.of(context)!.contactus,
                             style: TextStyle(
@@ -269,7 +269,7 @@ class _ContactUsScreenState extends State<ContactUsScreen> {
                     Container(height: height*0.15,),
                     Container(
                       height: height*0.4,
-                      color: Color(0xffFFD166),
+                      // color: Color(0xffFFD166),
                       child: Center(
                         child: Text(AppLocalizations.of(context)!.contactus,
                           style: TextStyle(

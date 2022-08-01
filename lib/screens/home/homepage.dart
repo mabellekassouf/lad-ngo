@@ -54,7 +54,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) =>
-                                            const AboutUsScreen()));
+                                            const AboutUsScreen(scrollLocation: "Goals",)));
                               },
                               child: Container(
                                 width: width * 0.28,
@@ -106,7 +106,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) =>
-                                            const AboutUsScreen()));
+                                            const AboutUsScreen(scrollLocation: "Mission",)));
                               },
                               child: Container(
                                 width: width * 0.28,
@@ -158,7 +158,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) =>
-                                            const AboutUsScreen()));
+                                            const AboutUsScreen(scrollLocation: "Vision",)));
                               },
                               child: Container(
                                 width: width * 0.28,
@@ -238,7 +238,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                              const AboutUsScreen()));
+                                              const AboutUsScreen(scrollLocation: "WhoWeAre",)));
                                     },
                                     child: Text(
                                       AppLocalizations.of(context)!.more,
@@ -309,7 +309,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) =>
-                                            const AboutUsScreen()));
+                                            const AboutUsScreen(scrollLocation: "Goals",)));
                               },
                               child: Container(
                                 width: width * 0.8,
@@ -361,7 +361,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) =>
-                                            const AboutUsScreen()));
+                                            const AboutUsScreen(scrollLocation: "Mission",)));
                               },
                               child: Container(
                                 width: width * 0.8,
@@ -413,7 +413,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) =>
-                                            const AboutUsScreen()));
+                                            const AboutUsScreen(scrollLocation: "Vision",)));
                               },
                               child: Container(
                                 width: width * 0.8,
@@ -461,7 +461,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
                       ),
                     ),
                     Container(
-                      height: height * 0.55,
+                      height: height * 0.6,
                       width: width,
                       padding: EdgeInsets.symmetric(horizontal: width * 0.05),
                       child: Column(
@@ -493,7 +493,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) =>
-                                        const AboutUsScreen()));
+                                        const AboutUsScreen(scrollLocation: "WhoWeAre",)));
                               },
                               child: Text(
                                 AppLocalizations.of(context)!.more,

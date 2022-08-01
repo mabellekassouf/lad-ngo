@@ -1,22 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:ladorg/helpers/responsive_helper.dart';
+import 'package:ladorg/screens/widgets/footer.dart';
+import 'package:ladorg/screens/widgets/navigation_bar.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import '../../helpers/responsive_helper.dart';
-import '../widgets/footer.dart';
-import '../widgets/navigation_bar.dart';
-import 'package:url_launcher/url_launcher.dart';
-class MediaCenterScreen extends StatefulWidget {
-  const MediaCenterScreen({Key? key}) : super(key: key);
+class ServicesScreen extends StatefulWidget {
+  const ServicesScreen({Key? key}) : super(key: key);
 
   @override
-  State<MediaCenterScreen> createState() => _MediaCenterScreenState();
+  State<ServicesScreen> createState() => _ServicesScreenState();
 }
 
-class _MediaCenterScreenState extends State<MediaCenterScreen> {
-  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-
-
-
-
+class _ServicesScreenState extends State<ServicesScreen> {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
@@ -32,7 +26,7 @@ class _MediaCenterScreenState extends State<MediaCenterScreen> {
                     Container(
                       height: height*0.8,
                       child: Center(
-                        child: Text(AppLocalizations.of(context)!.mediacenter,
+                        child: Text(AppLocalizations.of(context)!.ourservices,
                           style: TextStyle(
                             fontSize: 28,
                             color: Color(0xff073B4C),
@@ -44,7 +38,7 @@ class _MediaCenterScreenState extends State<MediaCenterScreen> {
                       height: height*0.6,
                       color: Colors.white,
                       child: Center(
-                        child: Text("No media available at the moment",
+                        child: Text("No current services available",
                           style: TextStyle(
                             fontSize: 18,
                             color: Color(0xff073B4C),
@@ -52,7 +46,7 @@ class _MediaCenterScreenState extends State<MediaCenterScreen> {
                         ),
                       ),
                     ),
-                    //INSERT CONTENT HERE
+                    //content here
                     FooterWidget(),
                   ],
                 ),
@@ -69,7 +63,7 @@ class _MediaCenterScreenState extends State<MediaCenterScreen> {
                     Container(
                       height: height*0.4,
                       child: Center(
-                        child: Text(AppLocalizations.of(context)!.mediacenter,
+                        child: Text(AppLocalizations.of(context)!.ourservices,
                           style: TextStyle(
                             fontSize: 28,
                             color: Color(0xff073B4C),
@@ -81,7 +75,7 @@ class _MediaCenterScreenState extends State<MediaCenterScreen> {
                       height: height*0.6,
                       color: Colors.white,
                       child: Center(
-                        child: Text("No media available at the moment",
+                        child: Text("No current donation ways available",
                           style: TextStyle(
                             fontSize: 18,
                             color: Color(0xff073B4C),
@@ -89,7 +83,7 @@ class _MediaCenterScreenState extends State<MediaCenterScreen> {
                         ),
                       ),
                     ),
-                    //CONTENT HERE
+                    //content here
                     FooterWidget(),
                   ],
                 ),

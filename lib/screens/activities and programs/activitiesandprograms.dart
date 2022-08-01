@@ -27,11 +27,22 @@ class _ActivitiesAndProgramsScreenState extends State<ActivitiesAndProgramsScree
                   children: [
                     Container(
                       height: height*0.8,
-                      color: Color(0xffFFD166),
                       child: Center(
                         child: Text(AppLocalizations.of(context)!.activitiesandprograms,
                           style: TextStyle(
                             fontSize: 28,
+                            color: Color(0xff073B4C),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      height: height*0.6,
+                      color: Colors.white,
+                      child: Center(
+                        child: Text("No Current Activities and Programs",
+                          style: TextStyle(
+                            fontSize: 18,
                             color: Color(0xff073B4C),
                           ),
                         ),
@@ -53,11 +64,22 @@ class _ActivitiesAndProgramsScreenState extends State<ActivitiesAndProgramsScree
                     Container(height: height*0.15,),
                     Container(
                       height: height*0.4,
-                      color: Color(0xffFFD166),
                       child: Center(
                         child: Text(AppLocalizations.of(context)!.activitiesandprograms,
                           style: TextStyle(
                             fontSize: 28,
+                            color: Color(0xff073B4C),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      height: height*0.6,
+                      color: Colors.white,
+                      child: Center(
+                        child: Text("No Current Activities and Programs",
+                          style: TextStyle(
+                            fontSize: 18,
                             color: Color(0xff073B4C),
                           ),
                         ),

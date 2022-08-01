@@ -208,7 +208,7 @@ class _NavBarItemMax extends StatelessWidget {
           Navigator.push(context, MaterialPageRoute(builder: (context)=> const ContactUsScreen()));
         }
         if(title== AppLocalizations.of(context)!.aboutus){
-          Navigator.push(context, MaterialPageRoute(builder: (context)=> const AboutUsScreen()));
+          Navigator.push(context, MaterialPageRoute(builder: (context)=> const AboutUsScreen(scrollLocation: "Main",)));
         }
         if(title== AppLocalizations.of(context)!.mediacenter){
           Navigator.push(context, MaterialPageRoute(builder: (context)=> const MediaCenterScreen()));
@@ -247,7 +247,7 @@ class _NavBarItemMin extends StatelessWidget {
           Navigator.push(context, MaterialPageRoute(builder: (context)=> const ContactUsScreen()));
         }
         if(title== AppLocalizations.of(context)!.aboutus){
-          Navigator.push(context, MaterialPageRoute(builder: (context)=> const AboutUsScreen()));
+          Navigator.push(context, MaterialPageRoute(builder: (context)=> const AboutUsScreen(scrollLocation: "Main",)));
         }
         if(title== AppLocalizations.of(context)!.mediacenter){
           Navigator.push(context, MaterialPageRoute(builder: (context)=> const MediaCenterScreen()));
