@@ -142,5 +142,9 @@
   "submit": "Submit",
   "@submit": {
     "description": "contract form"
+  },
+  "phonenumber": "+961/76-332-526",
+  "@phonenumber": {
+    "description": "+961/76-332-526"
   }
 }

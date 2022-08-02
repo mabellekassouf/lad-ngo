@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:ladorg/helpers/responsive_helper.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:ladorg/providers/locale_provider.dart';
 import 'package:ladorg/screens/about%20us/about_us.dart';
 import 'package:ladorg/screens/contact%20us/contactuspage.dart';
 import 'package:ladorg/screens/donate/donate.dart';
+import 'package:provider/provider.dart';
 import '../../helpers/constants.dart';
 
 class FooterWidget extends StatelessWidget {
@@ -11,6 +13,7 @@ class FooterWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final localeprovider = Provider.of<LocaleProvider>(context, listen: true);
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
     return ResponsiveHelper(
@@ -68,7 +71,9 @@ class FooterWidget extends StatelessWidget {
                             fontSize: 10,
                           color: Colors.white,),
                       ),
-                      style: TextButton.styleFrom(padding: EdgeInsets.zero),
+                      style: TextButton.styleFrom(
+                          padding: EdgeInsets.zero,
+                          alignment:  (localeprovider.locale.languageCode.toString()=="en")?Alignment.centerLeft:Alignment.centerRight),
                       onPressed: () {},
                     ),
                     TextButton(
@@ -81,7 +86,8 @@ class FooterWidget extends StatelessWidget {
                       ),
                       style: TextButton.styleFrom(
                           padding: EdgeInsets.zero,
-                          alignment: Alignment.centerLeft),
+                          alignment:  (localeprovider.locale.languageCode.toString()=="en")?Alignment.centerLeft:Alignment.centerRight
+                      ),
                       onPressed: () {
                         Navigator.push(context, MaterialPageRoute(builder: (context)=>DonateScreen()));
                       },
@@ -103,7 +109,9 @@ class FooterWidget extends StatelessWidget {
                             fontWeight: FontWeight.bold, fontSize: 10,
                           color: Colors.white,),
                       ),
-                      style: TextButton.styleFrom(padding: EdgeInsets.zero),
+                      style: TextButton.styleFrom(
+                          alignment:  (localeprovider.locale.languageCode.toString()=="en")?Alignment.centerLeft:Alignment.centerRight,
+                          padding: EdgeInsets.zero),
                       onPressed: () {
                         Navigator.push(context, MaterialPageRoute(builder: (context)=>AboutUsScreen(scrollLocation: "Mission",)));
                       },
@@ -115,7 +123,9 @@ class FooterWidget extends StatelessWidget {
                             fontWeight: FontWeight.bold, fontSize: 10,
                           color: Colors.white,),
                       ),
-                      style: TextButton.styleFrom(padding: EdgeInsets.zero),
+                      style: TextButton.styleFrom(
+                          alignment:  (localeprovider.locale.languageCode.toString()=="en")?Alignment.centerLeft:Alignment.centerRight,
+                          padding: EdgeInsets.zero),
                       onPressed: () {
                         Navigator.push(context, MaterialPageRoute(builder: (context)=>ContactUsScreen()));
                       },
@@ -218,7 +228,7 @@ class FooterWidget extends StatelessWidget {
                 Container(),
                 Container(),
                 Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment:CrossAxisAlignment.start,
                   children: [
                     Container(height: height*0.1,),
                     Text(
@@ -235,6 +245,7 @@ class FooterWidget extends StatelessWidget {
                       ),
                       style: TextButton.styleFrom(
                           padding: EdgeInsets.zero,
+                        alignment:  (localeprovider.locale.languageCode.toString()=="en")?Alignment.centerLeft:Alignment.centerRight
                       ),
                       onPressed: () {},
                     ),
@@ -247,7 +258,7 @@ class FooterWidget extends StatelessWidget {
                         ),
                       ),
                       style: TextButton.styleFrom(
-                        alignment: Alignment.centerLeft,
+                        alignment:  (localeprovider.locale.languageCode.toString()=="en")?Alignment.centerLeft:Alignment.centerRight,
                         padding: EdgeInsets.zero,
                       ),
                       onPressed: () {
@@ -257,7 +268,8 @@ class FooterWidget extends StatelessWidget {
                   ],
                 ),
                 Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment:CrossAxisAlignment.start
+                  ,
                   children: [
                     Container(height: height*0.1,),
                     Text(
@@ -271,7 +283,9 @@ class FooterWidget extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
-                      style: TextButton.styleFrom(padding: EdgeInsets.zero),
+                      style: TextButton.styleFrom(
+                          alignment:  (localeprovider.locale.languageCode.toString()=="en")?Alignment.centerLeft:Alignment.centerRight,
+                          padding: EdgeInsets.zero),
                       onPressed: () {
                         Navigator.push(context, MaterialPageRoute(builder: (context)=>AboutUsScreen(scrollLocation: "Mission",)));
                       },
@@ -283,7 +297,9 @@ class FooterWidget extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
-                      style: TextButton.styleFrom(padding: EdgeInsets.zero),
+                      style: TextButton.styleFrom(
+                          padding: EdgeInsets.zero,
+                          alignment:  (localeprovider.locale.languageCode.toString()=="en")?Alignment.centerLeft:Alignment.centerRight),
                       onPressed: () {
                         Navigator.push(context, MaterialPageRoute(builder: (context)=>ContactUsScreen()));
                       },

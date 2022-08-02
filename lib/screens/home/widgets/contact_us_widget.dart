@@ -70,7 +70,7 @@ class _HomeContactUsWidgetState extends State<HomeContactUsWidget> {
                           ),
                       ),
                       Text(
-                        "+961 76 332 526",
+                        AppLocalizations.of(context)!.phonenumber,
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16),
@@ -289,7 +289,7 @@ class _HomeContactUsWidgetState extends State<HomeContactUsWidget> {
                         ),
                       ),
                       Text(
-                        "+961 76 332 526",
+                        AppLocalizations.of(context)!.phonenumber,
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 16),
